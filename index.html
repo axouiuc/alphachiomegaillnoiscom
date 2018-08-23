@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
-   <title>axo uiuc website</title>
+   <title>w3 uiuc website</title>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="yuh.css">
+   <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <style>
@@ -16,82 +17,82 @@
       .bgimg-1 {
       background-position: center;
       background-size: cover;
-      background-image: url("axologo.png");
+      background-image: url("w3logo.png");
       min-height: 100%;
       }
-      .axo-bar .axo-button {
+      .w3-bar .w3-button {
       padding: 16px;
       }
    </style>
    <body>
       <!-- Navbar (sit on top) -->
-      <div class="axo-top">
-         <div class="axo-bar axo-white axo-card" id="myNavbar">
-            <a href="#home" class="axo-bar-item axo-button axo-wide">HOME</a>
+      <div class="w3-top">
+         <div class="w3-bar w3-white w3-card" id="myNavbar">
+            <a href="#home" class="w3-bar-item w3-button w3-wide">HOME</a>
             <!-- Right-sided navbar links -->
-            <div class="axo-right axo-hide-small">
-               <a href="#about" class="axo-bar-item axo-button">ABOUT</a>
-               <a href="#philanthropy" class="axo-bar-item axo-button"><i class="fa fa-heart"></i> PHILANTHROPY</a>
-               <a href="#board" class="axo-bar-item axo-button"><i class="fa fa-user"></i> EXECUTIVE BOARD</a>
-               <a href="#involvement" class="axo-bar-item axo-button"><i class="fa fa-handshake-o"></i> INVOLVEMENT</a>
-               <a href="#recruitment" class="axo-bar-item axo-button"><i class="fa fa-vcard"></i> RECRUITMENT</a>
-               <a href="#gallery" class="axo-bar-item axo-button"><i class="fa fa-th"></i> GALLERY</a>
+            <div class="w3-right w3-hide-small">
+               <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+               <a href="#philanthropy" class="w3-bar-item w3-button"><i class="fa fa-heart"></i> PHILANTHROPY</a>
+               <a href="#board" class="w3-bar-item w3-button"><i class="fa fa-user"></i> EXECUTIVE BOARD</a>
+               <a href="#involvement" class="w3-bar-item w3-button"><i class="fa fa-handshake-o"></i> INVOLVEMENT</a>
+               <a href="#recruitment" class="w3-bar-item w3-button"><i class="fa fa-vcard"></i> RECRUITMENT</a>
+               <a href="#gallery" class="w3-bar-item w3-button"><i class="fa fa-th"></i> GALLERY</a>
             </div>
             <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-            <a href="javascript:void(0)" class="axo-bar-item axo-button axo-right axo-hide-large axo-hide-medium" onclick="axo_open()">
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
             <i class="fa fa-bars"></i>
             </a>
          </div>
       </div>
+
+<!--header section-->
       <!-- Sidebar on small screens when clicking the menu icon -->
-      <nav class="axo-sidebar axo-bar-block axo-black axo-card axo-animate-left axo-hide-medium axo-hide-large" style="display:none" id="mySidebar">
-         <a href="javascript:void(0)" onclick="axo_close()" class="axo-bar-item axo-button axo-large axo-padding-16">Close ×</a>
-         <a href="#about" onclick="axo_close()" class="axo-bar-item axo-button">ABOUT</a>
-         <a href="#board" onclick="axo_close()" class="axo-bar-item axo-button">BOARD</a>
-         <a href="#involvement" onclick="axo_close()" class="axo-bar-item axo-button">INVOLVEMENT</a>
-         <a href="#gallery" onclick="axo_close()" class="axo-bar-item axo-button">GALLERY</a>
-         <a href="#philanthropy" onclick="axo_close()" class="axo-bar-item axo-button">PHILANTHROPY</a>
-         <a href="#recruitment" onclick="axo_close()" class="axo-bar-item axo-button">RECRUITMENT</a>
-      </nav>
-      <!-- Header with full-height image -->
-      <header class="bgimg-1 axo-display-container axo-grayscale-min" id="home">
-         <div class="axo-display-left axo-text-white" style="padding:48px">
-            <!--<span class="axo-jumbo axo-hide-small">Start something that matters</span><br>
-               <span class="axo-xxlarge axo-hide-large axo-hide-medium">Start something that matters</span><br>
+      <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+      <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
-               <span class="axo-large">Stop wasting valuable time with projects that just isn't you.</span>
+      <!-- Automatic Slideshow Images -->
+      <div class="mySlides w3-display-container w3-center">
+        <img src="axologo.png" style="width:100%">
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+        </div>
+      </div>
+    </div>
 
-               <p><a href="#about" class="axo-button axo-white axo-padding-large axo-large axo-margin-top axo-opacity axo-hover-opacity-off">Learn more and start today</a></p>-->
-         </div>
-         <div class="axo-display-bottomleft axo-text-grey axo-large" style="padding:24px 48px">
-            <a href="https://www.facebook.com/AXOIllinois/" ><i class="fa fa-facebook-official axo-hover-opacity"></i></a>
-            <a href="https://www.instagram.com/axouiuc" ><i class="fa fa-instagram axo-hover-opacity"></i></a>
-            <a href="https://twitter.com/axouiuc" ><i class="fa fa-twitter axo-hover-opacity"></i></a>
-            <a href="https://illinoisaxo.tumblr.com" ><i class="fa fa-tumblr axo-hover-opacity"></i></a>
-         </div>
-      </header>
+
+
+      <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+         <a href="https://www.facebook.com/w3Illinois/" ><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+         <a href="https://www.instagram.com/w3uiuc" ><i class="fa fa-instagram w3-hover-opacity"></i></a>
+         <a href="https://twitter.com/w3uiuc" ><i class="fa fa-twitter w3-hover-opacity"></i></a>
+         <a href="https://illinoisw3.tumblr.com" ><i class="fa fa-tumblr w3-hover-opacity"></i></a>
+      </div>
+
+    </header>
+
+<!--end header section-->
+
       <!-- About Section -->
-      <div class="axo-container" style="padding:80px 60px" id="about">
-         <h3 class="axo-center">ABOUT THE SORORITY</h3>
+      <div class="w3-container" style="padding:80px 60px" id="about">
+         <h3 class="w3-center">ABOUT THE SORORITY</h3>
          <!--photogrid-->
          <!-- Overlay effect when opening sidebar on small screens -->
-         <div class="axo-overlay axo-hide-large axo-animate-opacity" onclick="axo_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+         <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
          <!-- !PAGE CONTENT! -->
-         <div class="axo-mainabout" id="aboutgrid" style="margin-left:0px">
+         <div class="w3-mainabout" id="aboutgrid" style="margin-left:0px">
             <!-- Push down content on small screens -->
-            <div class="axo-hide-large" style="margin-top:83px"></div>
+            <div class="w3-hide-large" style="margin-top:83px"></div>
             <!-- Photo grid -->
             <div class="center">
-               <div class="axo-row" style="margin: auto">
-                  <div class="axo-third" id="axo-thirdid" style="padding:5px">
+               <div class="w3-row" style="margin: auto">
+                  <div class="w3-third" id="w3-thirdid" style="padding:5px">
                      <img src="history.png" style="width:100%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">
                      <img src="about1.png" style="width:100%" onclick="onClick(this)" alt="What a beautiful scenery this sunset">
                   </div>
-                  <div class="axo-third" id="axo-thirdid" style="padding:5px">
+                  <div class="w3-third" id="w3-thirdid" style="padding:5px">
                      <img src="about2.png" style="width:100%" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
                      <img src="traditions.png" style="width:100%" onclick="onClick(this)" alt="Waiting for the bus in the desert">
                   </div>
-                  <div class="axo-third" id="axo-thirdid" style="padding:5px">
+                  <div class="w3-third" id="w3-thirdid" style="padding:5px">
                      <img src="national.png" style="width:100%" onclick="onClick(this)" alt="Canoeing again">
                      <img src="about3.png" style="width:100%" onclick="onClick(this)" alt="A girl, and a train passing">
                   </div>
@@ -104,219 +105,247 @@
       </div>
       <!-- Philanthropy Section -->
       <!--Left Column-->
-      <div class="axo-container axo-center axo-dark-grey" style="padding:75px 16px" id="philanthropy">
+      <div class="w3-container w3-center w3-dark-grey" style="padding:75px 16px" id="philanthropy">
          <h3>PHILANTHROPY</h3>
-         <p class="axo-large">Alpha Chi Omega supports the fight against domestic violence</p>
-         <div class="axo-row-padding" style="margin-top:64px">
-            <div class="axo-third axo-section">
-               <ul class="axo-ul">
+         <p class="w3-large">Alpha Chi Omega supports the fight against domestic violence</p>
+         <div class="w3-row-padding" style="margin-top:64px">
+            <div class="w3-third w3-section">
+               <ul class="w3-ul">
                   <img src="macncheese1.png" style="width:100%">
                </ul>
-               <ul class="axo-ul">
+               <ul class="w3-ul">
                   <img src="macncheese2.png" style="width:100%">
                </ul>
-               <ul class="axo-ul">
+               <ul class="w3-ul">
                   <img src="macncheese6.png" style="width:100%">
                </ul>
             </div>
             <!--Middle column-->
-            <div class="axo-third axo-section">
-               <ul class="axo-ul axo-white axo-hover-shadow" >
-                  <li class="axo-red axo-xlarge axo-padding-32" id="philantext">Our Cause</li>
-                  <li class="axo-padding-16" id="philantext"><b>Our philanthropic goal as a chapter is to raise funds for the local women's shelter in Champaign- Courage Connection, and strive to spread awareness for the issue of domestic violence.
+            <div class="w3-third w3-section">
+               <ul class="w3-ul w3-white w3-hover-shadow" >
+                  <li class="w3-red w3-xlarge w3-padding-32" id="philantext">Our Cause</li>
+                  <li class="w3-padding-16" id="philantext"><b>Our philanthropic goal as a chapter is to raise funds for the local women's shelter in Champaign- Courage Connection, and strive to spread awareness for the issue of domestic violence.
                      Each semester we hold events to help support the shelter that gives so many women a safe place to stay. This past fall, our chapter hosted a golf tournament, in which fraternities signed up teams to play. In the spring, we hosted our yearly Mac N' Cheese dinner at the chapter house. This year, the dinner raised $7,653 for Courage Connection. We hope you can see why our cause is so close to our hearts, and that it may inspire you to become a part of it.</br>
                   </li>
                </ul>
                <!--Images Under text blurb in middle -->
-               <div class=" axo-section">
-                  <ul class="axo-ul">
+               <div class=" w3-section">
+                  <ul class="w3-ul">
                      <img src="macncheese5.png" style="width:100%">
                   </ul>
                </div>
                <!-- -->
             </div>
             <!--Right Column-->
-            <div class="axo-third axo-section">
-               <ul class="axo-ul">
+            <div class="w3-third w3-section">
+               <ul class="w3-ul">
                   <img src="macncheese3.png" style="width:100%">
                </ul>
-               <ul class="axo-ul">
+               <ul class="w3-ul">
                   <img src="macncheese7.png" style="width:100%">
                </ul>
-               <ul class="axo-ul">
+               <ul class="w3-ul">
                   <img src="macncheese4.png" style="width:100%">
                </ul>
             </div>
             <!-- End of Right Column-->
          </div>
       </div>
+
+
       <!-- Board Section -->
-      <div class="axo-container" style="padding:128px 16px" id="board">
-         <h3 class="axo-center">THE EXECUTIVE BOARD</h3>
-         <br>
-         <div class="axo-customboard" style="margin-left:70px" style="margin-top:64px">
-            <div class="row">
-               <div class="containerfh">
-                  <img src="President.png" alt="Avatar" style="width:300px" class="image">
-                  <div class="overlay">
-                     <div class="text">President: <br> Adriana</div>
-                  </div>
-               </div>
-               <div class="containerfh">
-                  <img src="VPChapterRelations.png" alt="Avatar" style="width:300px" class="image">
-                  <div class="overlay">
-                     <div class="text">Vice President of Chapter Relations: <br> Adriana</div>
-                  </div>
-               </div>
-               <div class="containerfh">
-                  <img src="VPFinance.png" alt="Avatar" style="width:300px" class="image">
-                  <div class="overlay">
-                     <div class="text">Vice President of Finance: <br> Adriana</div>
-                  </div>
-               </div>
-               <div class="containerfh">
-                  <img src="VPRitual.png" alt="Avatar" style="width:300px" class="image">
-                  <div class="overlay">
-                     <div class="text">Vice President of Ritual: <br> Amy</div>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="containerfh">
-                  <img src="VPRecruitment.png" alt="Avatar" style="width:300px" class="image">
-                  <div class="overlay">
-                     <div class="text">Vice President of Recruitment: <br> Adriana: <br> Adriana</div>
-                  </div>
-               </div>
-               <div class="containerfh">
-                  <img src="VPPhilanthropy.png" alt="Avatar" style="width:300px" class="image">
-                  <div class="overlay">
-                     <div class="text">Vice President of Philanthropy: <br> Adriana</div>
-                  </div>
-               </div>
-               <div class="containerfh">
-                  <img src="VPMarketing.png" alt="Avatar" style="width:300px" class="image">
-                  <div class="overlay">
-                     <div class="text">Vice President of PR & Marketing: <br> Adriana</div>
-                  </div>
-               </div>
-               <div class="containerfh">
-                  <img src="VPNewMemEd.png" alt="Avatar" style="width:300px" class="image">
-                  <div class="overlay">
-                     <div class="text">Vice President of New Member Education: <br> Adriana</div>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="containerfh">
-                  <img src="VPIntellect.png" alt="Avatar" style="width:300px" class="image">
-                  <div class="overlay">
-                     <div class="text">Vice President of Intellectual Development: <br> Adriana</div>
-                  </div>
-               </div>
-               <div class="containerfh">
-                  <img src="VPRiskManagement.png" alt="Avatar" style="width:300px" class="image">
-                  <div class="overlay">
-                     <div class="text">Vice President of Risk Management: <br> Adriana</div>
-                  </div>
-               </div>
-               <div class="containerfh">
-                  <img src="VPProgramming.png" alt="Avatar" style="width:300px" class="image">
-                  <div class="overlay">
-                     <div class="text">Vice President of Membership Programming: <br> Adriana</div>
-                  </div>
-               </div>
-               <div class="containerfh">
-                  <img src="VPPanhell.png" alt="Avatar" style="width:300px" class="image">
-                  <div class="overlay">
-                     <div class="text">Vice President Panhellenic Delegate: <br> Adriana</div>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="containerfh">
-                  <img src="VPFacilityOps.png" alt="Avatar" style="width:300px" class="image">
-                  <div class="overlay">
-                     <div class="text">Vice President of Facility Operations: <br> Adriana</div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
+
+<div class="w3-container" style="padding:128px 16px" id="board">
+
+<div class="w3-center">
+      <h2>THE EXECUTIVE BOARD</h2>
+
+<div class="w3-row"><br>
+
+<div class="w3-quarter">
+  <img src="President.png" alt="Boss" style="width:80%" class="w3-circle w3-hover-opacity">
+  <h3>Adriana Bosco</h3>
+  <p>President</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="VPChapterRelations.png" alt="Boss" style="width:80%" class="w3-circle w3-hover-opacity">
+  <h3>Megan Voris</h3>
+  <p>Vice President of Chapter Relations</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="VPFinance.png" alt="Boss" style="width:80%" class="w3-circle w3-hover-opacity">
+  <h3>Shannon Will</h3>
+  <p>Vice President of Finance</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="VPRitual.png" alt="Boss" style="width:80%" class="w3-circle w3-hover-opacity">
+  <h3>Amy Leick</h3>
+  <p>Vice President of Ritual</p>
+</div>
+
+</div>
+
+<!--new row-->
+
+<div class="w3-row"><br>
+
+<div class="w3-quarter">
+  <img src="VPRecruitment.png" alt="Boss" style="width:80%" class="w3-circle w3-hover-opacity">
+  <h3>Maddie Peckus</h3>
+  <p>Vice President of Recruitment</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="VPPhilanthropy.png" alt="Boss" style="width:80%" class="w3-circle w3-hover-opacity">
+  <h3>Rachel Finegold</h3>
+  <p>Vice President of Philanthropy</p>
+</div>
+
+
+
+<div class="w3-quarter">
+  <img src="VPMarketing.png" alt="Boss" style="width:80%" class="w3-circle w3-hover-opacity">
+  <h3>Heather Schwartz</h3>
+  <p>Vice President of PR & Marketing</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="VPNewMemEd.png" alt="Boss" style="width:80%" class="w3-circle w3-hover-opacity">
+  <h3>Lauren Amabile</h3>
+  <p>Vice President of New Member Education</p>
+</div>
+
+</div>
+
+<div class="w3-row"><br>
+
+<div class="w3-quarter">
+  <img src="VPIntellect.png" alt="Boss" style="width:80%" class="w3-circle w3-hover-opacity">
+  <h3>Pauline Ostoja-Starzewski</h3>
+  <p>Vice President of Intellectual Development</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="VPRiskManagement.png" alt="Boss" style="width:80%" class="w3-circle w3-hover-opacity">
+  <h3>Kenzie Byxbe</h3>
+  <p>Vice President of Risk Management</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="VPProgramming.png" alt="Boss" style="width:80%" class="w3-circle w3-hover-opacity">
+  <h3>Olivia Pustulka</h3>
+  <p>Vice President of Membership Programming</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="VPPanhell.png" alt="Boss" style="width:80%" class="w3-circle w3-hover-opacity">
+  <h3>Lexi Jackson</h3>
+  <p>Vice President Panhellenic Delegate</p>
+</div>
+
+</div>
+
+<!--new row-->
+
+<div class="w3-row"><br>
+
+<div class="w3-quarter">
+  <img src="VPFacilityOps.png" alt="Boss" style="width:80%" class="w3-circle w3-hover-opacity">
+  <h3>Lauren Mahloch</h3>
+  <p>Vice President of Facility Operations</p>
+</div>
+</div>
+
+</div>
+</div>
+
+<!--end of board section-->
+
       <!-- Promo Section "Statistics" -->
-      <div class="axo-container axo-row axo-center axo-dark-grey axo-padding-64">
-         <div class="axo-quarter">
-            <span class="axo-xxlarge">133+</span>
-            <br>Years Since AXO Was Founded
+      <div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+         <div class="w3-quarter">
+            <span class="w3-xxlarge">133+</span>
+            <br>Years Since w3 Was Founded
          </div>
-         <div class="axo-quarter">
-            <span class="axo-xxlarge">119+</span>
+         <div class="w3-quarter">
+            <span class="w3-xxlarge">119+</span>
             <br>Years Since the Iota Chapter Was Founded
          </div>
-         <div class="axo-quarter">
-            <span class="axo-xxlarge">185+</span>
+         <div class="w3-quarter">
+            <span class="w3-xxlarge">185+</span>
             <br>Active Members
          </div>
-         <div class="axo-quarter">
-            <span class="axo-xxlarge">25+</span>
+         <div class="w3-quarter">
+            <span class="w3-xxlarge">25+</span>
             <br>Years of Supporting Domestic Abuse Awareness
          </div>
       </div>
       <!-- Involvement Row -->
-      <div class="axo-row-padding axo-padding-64 axo-theme-l1" id="involvement">
-         <br></br>
-         <h3 class="axo-center">INVOLVEMENT</h3>
-         <br>
-         <div class="axo-fifth">
-            <h2>Real. Strong. Women.</h2>
-            <p>
-               The iota chapter is filled with diverse women, each bringing their own unique qualities and strengths to the sorority.
-               we are leaders, scholars, and dreamers.
-               We are women who
-               seek the heights.
-            </p>
-         </div>
-         <div class="axo-fifth">
-            <div class="axo-card axo-white" style="height:500px;">
-               <img src="involvement1.png" alt="Snow" style="width:100%">
-               <div class="axo-container">
-                  <p>Shannon Will, Adriana Bosco and Lauren Mahloch attending this year's leadership Academy in Indianapolis.</p>
-               </div>
-            </div>
-         </div>
-         <div class="axo-fifth">
-            <div class="axo-card axo-white" style="height:500px;">
-               <img src="involvement2.png" alt="Lights" style="width:100%">
-               <div class="axo-container">
-                  <p>Emma Kahle cheering on the Illini hockey team.</p>
-                  <br>
-                  <br>
-                  <br>
-               </div>
-            </div>
-         </div>
-         <div class="axo-fifth">
-            <div class="axo-card axo-white" style="height:500px;">
-               <img src="involvement3.png" alt="Mountains" style="width:100%">
-               <div class="axo-container">
-                  <p>Marielle Demertzis is this years president of the University of Illinois dance marathon, Illinithon.</p>
-                  <br>
-               </div>
-            </div>
-         </div>
-         <div class="axo-fifth">
-            <div class="axo-card axo-white" style="height:500px;">
-               <img src="involvement4.png" alt="Mountains" style="width:100%">
-               <div class="axo-container">
-                  <p>Mariah Guzman hosts marketing events through her partnership with Express.</p>
-                  <br>
-               </div>
-            </div>
-         </div>
+
+      <div class="w3-row-padding w3-padding-64 w3-theme-l1" id="involvement">
+
+      <h3 class="w3-center">INVOLVEMENT</h3>
+
+      <div class="w3-fifth">
+      <h2>Real. Strong. Women.</h2>
+      <p>The iota chapter is filled with diverse women, each bringing their own unique qualities and strengths to the sorority.
+      we are leaders, scholars, and dreamers.
+      We are women who
+      seek the heights.</p>
       </div>
+
+      <div class="w3-fifth">
+      <div class="w3-card w3-white">
+        <img src="involvement1.png" alt="Snow" style="width:100%">
+        <div class="w3-container">
+        <p>Shannon Will, Adriana Bosco and Lauren Mahloch attending this year's leadership Academy in Indianapolis.</p>
+        <br>
+        </div>
+        </div>
+      </div>
+
+      <div class="w3-fifth">
+      <div class="w3-card w3-white">
+        <img src="involvement2.png" alt="Lights" style="width:100%">
+        <p>Emma Kahle cheering on the Illini hockey team.</p>
+        <br>
+        </br>
+      <br>
+        </div>
+      </div>
+
+      <div class="w3-fifth">
+      <div class="w3-card w3-white">
+        <img src="involvement3.png" alt="Mountains" style="width:100%">
+        <div class="w3-container">
+        <p>Marielle Demertzis is this years president of the University of Illinois dance marathon, Illinithon.</p>
+        <br>
+      </br>
+        </div>
+        </div>
+      </div>
+
+
+      <div class="w3-fifth">
+      <div class="w3-card w3-white">
+        <img src="involvement4.png" alt="Mountains" style="width:100%">
+        <div class="w3-container">
+        <p>Mariah Guzman hosts marketing events through her partnership with Express.</p>
+        <br>
+        </div>
+        </div>
+      </div>
+
+      </div>
+
+<!--yuh-->
+
       <!-- Recruitment Section -->
-      <div class="axo-container axo-light-grey row" id="recruitment" style="padding:128px 16px">
-         <h3 class="axo-center">RECRUITMENT</h3>
+      <div class="w3-container w3-light-grey row" id="recruitment" style="padding:128px 16px">
+         <h3 class="w3-center">RECRUITMENT</h3>
          <div class="columnrec" id="rectextbox">
             <h3> Recruitment dates: Sep. 6&7, 13-17 2018 </h3>
             <p>The ladies of alpha chi omega are very excited to meet the potential new members this fall during formal recruitment 2018.  we understand the recruitment process can be overwhelming, so we hope you'll reach out with any questions you may have at illiniphcvprecruitment@gmail.com
@@ -324,52 +353,52 @@
                Alpha Chi Omega encourages you to go Greek.
             </p>
          </div>
-         <div class="columnrec axo-content axo-border-left axo-border-right">
+         <div class="columnrec w3-content w3-border-left w3-border-right">
             <!-- Overlay effect when opening sidebar on small screens -->
-            <div class="axo-overlay axo-hide-large" onclick="axo_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+            <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
             <!-- !PAGE CONTENT! -->
-            <div class="axo-main" >
+            <div class="w3-main" >
                <!-- Push down content on small screens -->
-               <div class="axo-hide-large" style="margin-top:80px"></div>
+               <div class="w3-hide-large" style="margin-top:80px"></div>
                <!-- Slideshow Header -->
-               <div class="axo-container" id="apartment">
-                  <div class="axo-display-container mySlides">
+               <div class="w3-container" id="apartment">
+                  <div class="w3-display-container mySlides">
                      <img src="Rec1.png" style="width:100%;margin-bottom:-6px">
-                     <div class="axo-display-bottomleft axo-container axo-black">
+                     <div class="w3-display-bottomleft w3-container w3-black">
                         <p>Our House</p>
                      </div>
                   </div>
-                  <div class="axo-display-container mySlides">
+                  <div class="w3-display-container mySlides">
                      <img src="Rec2.png" style="width:100%;margin-bottom:-6px">
-                     <div class="axo-display-bottomleft axo-container axo-black">
+                     <div class="w3-display-bottomleft w3-container w3-black">
                         <p>Our House</p>
                      </div>
                   </div>
-                  <div class="axo-display-container mySlides">
+                  <div class="w3-display-container mySlides">
                      <img src="Rec3.png" style="width:100%;margin-bottom:-6px">
-                     <div class="axo-display-bottomleft axo-container axo-black">
+                     <div class="w3-display-bottomleft w3-container w3-black">
                         <p>Our House</p>
                      </div>
                   </div>
-                  <div class="axo-display-container mySlides">
+                  <div class="w3-display-container mySlides">
                      <img src="Rec4.png" style="width:100%;margin-bottom:-6px">
-                     <div class="axo-display-bottomleft axo-container axo-black">
+                     <div class="w3-display-bottomleft w3-container w3-black">
                         <p>Our House</p>
                      </div>
                   </div>
                </div>
-               <div class="axo-row-padding axo-section">
-                  <div class="axo-col s3">
-                     <img class="demo axo-opacity axo-hover-opacity-off" src="Rec1.png" style="width:100%;cursor:pointer" onclick="currentDiv(1)" title="Living room">
+               <div class="w3-row-padding w3-section">
+                  <div class="w3-col s3">
+                     <img class="demo w3-opacity w3-hover-opacity-off" src="Rec1.png" style="width:100%;cursor:pointer" onclick="currentDiv(1)" title="Living room">
                   </div>
-                  <div class="axo-col s3">
-                     <img class="demo axo-opacity axo-hover-opacity-off" src="Rec2.png" style="width:100%;cursor:pointer" onclick="currentDiv(2)" title="Dining room">
+                  <div class="w3-col s3">
+                     <img class="demo w3-opacity w3-hover-opacity-off" src="Rec2.png" style="width:100%;cursor:pointer" onclick="currentDiv(2)" title="Dining room">
                   </div>
-                  <div class="axo-col s3">
-                     <img class="demo axo-opacity axo-hover-opacity-off" src="Rec3.png" style="width:100%;cursor:pointer" onclick="currentDiv(3)" title="Bedroom">
+                  <div class="w3-col s3">
+                     <img class="demo w3-opacity w3-hover-opacity-off" src="Rec3.png" style="width:100%;cursor:pointer" onclick="currentDiv(3)" title="Bedroom">
                   </div>
-                  <div class="axo-col s3">
-                     <img class="demo axo-opacity axo-hover-opacity-off" src="Rec4.png" style="width:100%;cursor:pointer" onclick="currentDiv(4)" title="Second Living Room">
+                  <div class="w3-col s3">
+                     <img class="demo w3-opacity w3-hover-opacity-off" src="Rec4.png" style="width:100%;cursor:pointer" onclick="currentDiv(4)" title="Second Living Room">
                   </div>
                </div>
                <!-- End page content -->
@@ -383,26 +412,26 @@
          </div>
       </div>
       <!-- Gallery Section -->
-      <div class="axo-container" style="padding:128px 16px" id="gallery">
-         <h3 class="axo-center">OUR GALLERY</h3>
-         <div class="axo-row-padding" id="myGrid" style="margin-bottom:128px">
-            <div class="axo-quarter">
+      <div class="w3-container" style="padding:128px 16px" id="gallery">
+         <h3 class="w3-center">OUR GALLERY</h3>
+         <div class="w3-row-padding" id="myGrid" style="margin-bottom:128px">
+            <div class="w3-quarter">
                <img src="gal1.png" style="width:100%">
                <img src="gal2.png" style="width:100%">
                <img src="gal3.png" style="width:100%">
                <img src="gal4.png" style="width:100%">
             </div>
-            <div class="axo-quarter">
+            <div class="w3-quarter">
                <img src="gal6.png" style="width:100%">
                <img src="gal7.png" style="width:100%">
                <img src="gal8.png" style="width:100%">
             </div>
-            <div class="axo-quarter">
+            <div class="w3-quarter">
                <img src="gal10.png" style="width:100%">
                <img src="gal11.png" style="width:100%">
                <img src="gal12.png" style="width:100%">
             </div>
-            <div class="axo-quarter">
+            <div class="w3-quarter">
                <img src="gal14.png" style="width:100%">
                <img src="gal13.png" style="width:100%">
                <img src="gal9.png" style="width:100%">
@@ -411,21 +440,21 @@
          </div>
       </div>
       <!-- Modal for full size images on click-->
-      <div id="modal01" class="axo-modal axo-black" onclick="this.style.display='none'">
-         <span class="axo-button axo-xxlarge axo-black axo-padding-large axo-display-topright" title="Close Modal Image">×</span>
-         <div class="axo-modal-content axo-animate-zoom axo-center axo-transparent axo-padding-64">
-            <img id="img01" class="axo-image">
-            <p id="caption" class="axo-opacity axo-large"></p>
+      <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+         <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+         <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img id="img01" class="w3-image">
+            <p id="caption" class="w3-opacity w3-large"></p>
          </div>
       </div>
       <!-- Footer -->
-      <footer class="axo-center axo-black axo-padding-64">
-         <a href="#home" class="axo-button axo-light-grey"><i class="fa fa-arrow-up axo-margin-right"></i>To the top</a>
-         <div class="axo-xlarge axo-section">
-            <a href="https://www.facebook.com/AXOIllinois/" ><i class="fa fa-facebook-official axo-hover-opacity"></i></a>
-            <a href="https://www.instagram.com/axouiuc" ><i class="fa fa-instagram axo-hover-opacity"></i></a>
-            <a href="https://twitter.com/axouiuc" ><i class="fa fa-twitter axo-hover-opacity"></i></a>
-            <a href="https://illinoisaxo.tumblr.com" ><i class="fa fa-tumblr axo-hover-opacity"></i></a>
+      <footer class="w3-center w3-black w3-padding-64">
+         <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+         <div class="w3-xlarge w3-section">
+            <a href="https://www.facebook.com/w3Illinois/" ><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+            <a href="https://www.instagram.com/w3uiuc" ><i class="fa fa-instagram w3-hover-opacity"></i></a>
+            <a href="https://twitter.com/w3uiuc" ><i class="fa fa-twitter w3-hover-opacity"></i></a>
+            <a href="https://illinoisw3.tumblr.com" ><i class="fa fa-tumblr w3-hover-opacity"></i></a>
          </div>
       </footer>
       <!-- Add Google Maps -->
@@ -472,7 +501,7 @@
 
 
 
-         function axo_open() {
+         function w3_open() {
 
              if (mySidebar.style.display === 'block') {
 
@@ -490,7 +519,7 @@
 
          // Close the sidebar with the close button
 
-         function axo_close() {
+         function w3_close() {
 
              mySidebar.style.display = "none";
 
@@ -500,7 +529,7 @@
 
          // Script to open and close sidebar when on tablets and phones
 
-         function axo_open() {
+         function w3_open() {
 
              document.getElementById("mySidebar").style.display = "block";
 
@@ -510,7 +539,7 @@
 
 
 
-         function axo_close() {
+         function w3_close() {
 
              document.getElementById("mySidebar").style.display = "none";
 
@@ -564,13 +593,13 @@
 
            for (i = 0; i < dots.length; i++) {
 
-              dots[i].className = dots[i].className.replace(" axo-opacity-off", "");
+              dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
 
            }
 
            x[slideIndex-1].style.display = "block";
 
-           dots[slideIndex-1].className += " axo-opacity-off";
+           dots[slideIndex-1].className += " w3-opacity-off";
 
          }
 
@@ -581,7 +610,7 @@
       <!--
          To use this code on your website, get a free API key from Google.
 
-         Read more at: https://www.axoschools.com/graphics/google_maps_basic.asp
+         Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 
          -->
    </body>
