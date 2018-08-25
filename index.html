@@ -32,6 +32,7 @@
             <!-- Right-sided navbar links -->
             <div class="w3-right w3-hide-small">
                <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+               <a href="#house" class="w3-bar-item w3-button"><i class="fa fa-home"></i> HOUSE</a>
                <a href="#philanthropy" class="w3-bar-item w3-button"><i class="fa fa-heart"></i> PHILANTHROPY</a>
                <a href="#board" class="w3-bar-item w3-button"><i class="fa fa-user"></i> EXECUTIVE BOARD</a>
                <a href="#involvement" class="w3-bar-item w3-button"><i class="fa fa-handshake-o"></i> INVOLVEMENT</a>
@@ -51,6 +52,7 @@
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
   <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#house" onclick="w3_close()" class="w3-bar-item w3-button">HOUSE</a>
   <a href="#philanthropy" onclick="w3_close()" class="w3-bar-item w3-button">PHILANTHROPY</a>
   <a href="#board" onclick="w3_close()" class="w3-bar-item w3-button">EXECUTIVE BOARD</a>
   <a href="#involvement" onclick="w3_close()" class="w3-bar-item w3-button">INVOLVEMENT</a>
@@ -121,6 +123,50 @@
          <!-- end photogrid-->
       </div>
 
+
+      <!--SEE THE HOUSE-->
+      <div class="w3-container" style="padding:128px 16px" id="house">
+        <div class="w3-center">
+        <h2>THE HOUSE</h2>
+      </div>
+
+
+<div class="w3-row-padding">
+      <div class="img-comp-container w3-center w3-third">
+        <div class="img-comp-img">
+          <img src="axoinside.png" width="350" height="250">
+        </div>
+        <div class="img-comp-img img-comp-overlay">
+          <img src="housepic.png" width="350" height="250">
+        </div>
+      </div>
+
+
+      <div class="img-comp-container w3-center w3-third">
+        <div class="img-comp-img">
+          <img src="diningroom.png" width="350" height="250">
+        </div>
+        <div class="img-comp-img img-comp-overlay">
+          <img src="kitchen.png" width="350" height="250">
+        </div>
+      </div>
+
+
+      <div class="img-comp-container w3-center w3-third">
+        <div class="img-comp-img">
+          <img src="composite.png" width="350" height="250">
+        </div>
+        <div class="img-comp-img img-comp-overlay">
+          <img src="comf.png" width="350" height="250">
+        </div>
+      </div>
+      </div>
+    </div>
+      <!--end of house section-->
+
+
+
+
       <!-- Philanthropy Section -->
       <!--Left Column-->
       <div class="w3-container w3-center w3-dark-grey" style="padding:75px 16px" id="philanthropy">
@@ -169,6 +215,10 @@
             <!-- End of Right Column-->
          </div>
       </div>
+
+
+
+
 
 
       <!-- Board Section -->
@@ -328,11 +378,13 @@
       <div class="w3-fifth">
       <div class="w3-card w3-white">
         <img src="involvement2.png" alt="Lights" style="width:100%">
+        <div class="w3-container">
         <p>Emma Kahle cheering on the Illini hockey team.</p>
         <br>
         </br>
       <br>
          </br>
+       </div>
         </div>
       </div>
 
@@ -384,27 +436,15 @@
                <div class="w3-container" id="apartment">
                   <div class="w3-display-container mySlides">
                      <img src="Rec1.png" style="width:100%;margin-bottom:-6px">
-                     <div class="w3-display-bottomleft w3-container w3-black">
-                        <p>Our House</p>
-                     </div>
                   </div>
                   <div class="w3-display-container mySlides">
                      <img src="Rec2.png" style="width:100%;margin-bottom:-6px">
-                     <div class="w3-display-bottomleft w3-container w3-black">
-                        <p>Our House</p>
-                     </div>
                   </div>
                   <div class="w3-display-container mySlides">
                      <img src="Rec3.png" style="width:100%;margin-bottom:-6px">
-                     <div class="w3-display-bottomleft w3-container w3-black">
-                        <p>Our House</p>
-                     </div>
                   </div>
                   <div class="w3-display-container mySlides">
                      <img src="Rec4.png" style="width:100%;margin-bottom:-6px">
-                     <div class="w3-display-bottomleft w3-container w3-black">
-                        <p>Our House</p>
-                     </div>
                   </div>
                </div>
                <div class="w3-row-padding w3-section">
@@ -647,6 +687,88 @@
          }
 
 
+/*start slider css*/
+
+         function initComparisons() {
+           var x, i;
+           /*find all elements with an "overlay" class:*/
+           x = document.getElementsByClassName("img-comp-overlay");
+           for (i = 0; i < x.length; i++) {
+             /*once for each "overlay" element:
+             pass the "overlay" element as a parameter when executing the compareImages function:*/
+             compareImages(x[i]);
+           }
+           function compareImages(img) {
+             var slider, img, clicked = 0, w, h;
+             /*get the width and height of the img element*/
+             w = img.offsetWidth;
+             h = img.offsetHeight;
+             /*set the width of the img element to 50%:*/
+             img.style.width = (w / 2) + "px";
+             /*create slider:*/
+             slider = document.createElement("DIV");
+             slider.setAttribute("class", "img-comp-slider");
+             /*insert slider*/
+             img.parentElement.insertBefore(slider, img);
+             /*position the slider in the middle:*/
+             slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
+             slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
+             /*execute a function when the mouse button is pressed:*/
+             slider.addEventListener("mousedown", slideReady);
+             /*and another function when the mouse button is released:*/
+             window.addEventListener("mouseup", slideFinish);
+             /*or touched (for touch screens:*/
+             slider.addEventListener("touchstart", slideReady);
+             /*and released (for touch screens:*/
+             window.addEventListener("touchstop", slideFinish);
+             function slideReady(e) {
+               /*prevent any other actions that may occur when moving over the image:*/
+               e.preventDefault();
+               /*the slider is now clicked and ready to move:*/
+               clicked = 1;
+               /*execute a function when the slider is moved:*/
+               window.addEventListener("mousemove", slideMove);
+               window.addEventListener("touchmove", slideMove);
+             }
+             function slideFinish() {
+               /*the slider is no longer clicked:*/
+               clicked = 0;
+             }
+             function slideMove(e) {
+               var pos;
+               /*if the slider is no longer clicked, exit this function:*/
+               if (clicked == 0) return false;
+               /*get the cursor's x position:*/
+               pos = getCursorPos(e)
+               /*prevent the slider from being positioned outside the image:*/
+               if (pos < 0) pos = 0;
+               if (pos > w) pos = w;
+               /*execute a function that will resize the overlay image according to the cursor:*/
+               slide(pos);
+             }
+             function getCursorPos(e) {
+               var a, x = 0;
+               e = e || window.event;
+               /*get the x positions of the image:*/
+               a = img.getBoundingClientRect();
+               /*calculate the cursor's x coordinate, relative to the image:*/
+               x = e.pageX - a.left;
+               /*consider any page scrolling:*/
+               x = x - window.pageXOffset;
+               return x;
+             }
+             function slide(x) {
+               /*resize the image:*/
+               img.style.width = x + "px";
+               /*position the slider:*/
+               slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
+             }
+           }
+         }
+
+         /*Execute a function that will execute an image compare function for each element with the img-comp-overlay class:*/
+         initComparisons();
+/*end slider css*/
 
       </script>
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
