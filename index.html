@@ -45,16 +45,29 @@
          </div>
       </div>
 
+      <!-- Sidebar on small screens when clicking the menu icon -->
+
+
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#philanthropy" onclick="w3_close()" class="w3-bar-item w3-button">PHILANTHROPY</a>
+  <a href="#board" onclick="w3_close()" class="w3-bar-item w3-button">EXECUTIVE BOARD</a>
+  <a href="#involvement" onclick="w3_close()" class="w3-bar-item w3-button">INVOLVEMENT</a>
+  <a href="#recruitment" onclick="w3_close()" class="w3-bar-item w3-button">RECRUITMENT</a>
+  <a href="#gallery" onclick="w3_close()" class="w3-bar-item w3-button">GALLERY</a>
+</nav>
+
 <!--header section-->
 <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
   <img class="w3-image" src="axologo.png" alt="Architecture" width="1500" height="800">
   <div class="w3-display-middle w3-margin-top w3-center">
   </div>
   <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
-     <a href="https://www.facebook.com/w3Illinois/" ><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-     <a href="https://www.instagram.com/w3uiuc" ><i class="fa fa-instagram w3-hover-opacity"></i></a>
-     <a href="https://twitter.com/w3uiuc" ><i class="fa fa-twitter w3-hover-opacity"></i></a>
-     <a href="https://illinoisw3.tumblr.com" ><i class="fa fa-tumblr w3-hover-opacity"></i></a>
+     <a href="https://www.facebook.com/axoIllinois/" ><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+     <a href="https://www.instagram.com/axouiuc" ><i class="fa fa-instagram w3-hover-opacity"></i></a>
+     <a href="https://twitter.com/axouiuc" ><i class="fa fa-twitter w3-hover-opacity"></i></a>
+     <a href="https://illinoisaxo.tumblr.com" ><i class="fa fa-tumblr w3-hover-opacity"></i></a>
   </div>
 </header>
 
@@ -352,14 +365,15 @@
       <!-- Recruitment Section -->
       <div class="w3-container w3-light-grey row" id="recruitment" style="padding:128px 16px">
          <h3 class="w3-center">RECRUITMENT</h3>
-         <div class="columnrec" id="rectextbox">
+         <div class="w3-row-padding">
+         <div class="columnrec w3-third" id="rectextbox">
             <h3> Recruitment dates: Sep. 6&7, 13-17 2018 </h3>
-            <p>The ladies of alpha chi omega are very excited to meet the potential new members this fall during formal recruitment 2018.  we understand the recruitment process can be overwhelming, so we hope you'll reach out with any questions you may have at illiniphcvprecruitment@gmail.com
+            <p>The ladies of Alpha Chi Omega are very excited to meet the potential new members this fall during formal recruitment 2018.  we understand the recruitment process can be overwhelming, so we hope you'll reach out with any questions you may have at illiniphcvprecruitment@gmail.com
                Please visit http://illinoisphc.com for more information about the recruitment process at the University of Illinois. We look forward to meeting you!
                Alpha Chi Omega encourages you to go Greek.
             </p>
          </div>
-         <div class="columnrec w3-content w3-border-left w3-border-right">
+         <div class="columnrec w3-content w3-border-left w3-border-right w3-third">
             <!-- Overlay effect when opening sidebar on small screens -->
             <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
             <!-- !PAGE CONTENT! -->
@@ -410,12 +424,20 @@
                <!-- End page content -->
             </div>
          </div>
-         <div class="columnrec" id="rectextbox">
+         <div class="columnrec w3-third" id="rectextbox">
             <h3>Letters of Recommendation</h3>
-            <p>Have a family or friend who is affiliated with alpha chi omega?
+            <p>Have a family or friend who is affiliated with Alpha Chi Omega?
                Read more about the recommendation Letter process at alphachiomega.org or email the Iota Chapter at cric.alphachi@gmail.com with any specific questions or concerns.
+               <br>
+             </br>
+             <br>
+           </br>
+           <br>
+         </br>
+         <br>
             </p>
          </div>
+       </div>
       </div>
       <!-- Gallery Section -->
       <div class="w3-container" style="padding:128px 16px" id="gallery">
@@ -457,10 +479,10 @@
       <footer class="w3-center w3-black w3-padding-64">
          <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
          <div class="w3-xlarge w3-section">
-            <a href="https://www.facebook.com/w3Illinois/" ><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-            <a href="https://www.instagram.com/w3uiuc" ><i class="fa fa-instagram w3-hover-opacity"></i></a>
-            <a href="https://twitter.com/w3uiuc" ><i class="fa fa-twitter w3-hover-opacity"></i></a>
-            <a href="https://illinoisw3.tumblr.com" ><i class="fa fa-tumblr w3-hover-opacity"></i></a>
+            <a href="https://www.facebook.com/axoIllinois/" ><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+            <a href="https://www.instagram.com/axouiuc" ><i class="fa fa-instagram w3-hover-opacity"></i></a>
+            <a href="https://twitter.com/axouiuc" ><i class="fa fa-twitter w3-hover-opacity"></i></a>
+            <a href="https://illinoisaxo.tumblr.com" ><i class="fa fa-tumblr w3-hover-opacity"></i></a>
          </div>
       </footer>
       <!-- Add Google Maps -->
@@ -499,8 +521,23 @@
 
 
 
+         // Toggle between showing and hiding the sidebar when clicking the menu icon
+         var mySidebar = document.getElementById("mySidebar");
 
+         function w3_open() {
+             if (mySidebar.style.display === 'block') {
+                 mySidebar.style.display = 'none';
+             } else {
+                 mySidebar.style.display = 'block';
+             }
+         }
 
+         // Close the sidebar with the close button
+         function w3_close() {
+             mySidebar.style.display = "none";
+         }
+
+/*THIS WHOLE PART WAS COMMENTED OUT
          // Toggle between showing and hiding the sidebar when clicking the menu icon
 
          var mySidebar = document.getElementById("mySidebar");
@@ -552,7 +589,7 @@
              document.getElementById("myOverlay").style.display = "none";
 
          }
-
+*/
 
 
          // Slideshow recruitment Images
