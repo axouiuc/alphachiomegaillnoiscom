@@ -267,12 +267,12 @@ a{
 }
  #rectextbox{
      background-color: #f9d5da;
-     height: 420px;
+     //height: 420px;
 }
 
  .columnrec {
      float: left;
-     width: 33.33%;
+     //width: 33.33%;
      padding: 5px;
 }
  .w3-tooltip,.w3-display-container{
